@@ -5,8 +5,6 @@
   throw new Error("server.js run error");
   console.log('[server]', 'js运行结束.');
 
-  return;
-   
   ///////////////////////////
   // file
   var $ = function (id) {
