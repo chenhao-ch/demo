@@ -1,7 +1,7 @@
 
 <?php
 
-// header("Access-Control-Allow-Origin: http://www.client.com");
+header("Access-Control-Allow-Origin: http://www.client.com");
 
 $data_out = <<<End
 {
