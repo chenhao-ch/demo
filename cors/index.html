@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>CORS demo</title>
+    <script type="text/javascript">
+      window.onerror = function(e) {
+        console.log(e);
+      };
+    </script>
+  </head>
+  <body>
+    <input type="file" id="file"><br />
+    <canvas id="canvas" width="391" height="220"></canvas>
+    <!-- 同源js通过ajax加载跨域资源 -->
+    <script type="text/javascript" src="./scripts/client.js"></script>
+    <!-- client域名页面 加载 server域名js， 使用crossorigin后才可以正确输出error -->
+    <!-- <script type="text/javascript" crossorigin="anonymous" src="http://www.server.com/demo/cors/scripts/server.js"></script> -->
+    <script type="text/javascript" src="http://www.server.com/demo/cors/scripts/server.js"></script>
+  </body>
+</html>
