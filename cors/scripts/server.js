@@ -1,9 +1,9 @@
 
 (function() {
   // server域名下的js
-  console.log('[server]: ', 'js运行开始.');
-  throw new Error("server.js run error");
-  console.log('[server]', 'js运行结束.');
+  // console.log('[server]: ', 'js运行开始.');
+  // throw new Error("server.js run error");
+  // console.log('[server]', 'js运行结束.');
 
   ///////////////////////////
   // file
@@ -32,8 +32,8 @@
   var ctx = canvas.getContext('2d');
 
   var image = new Image();
-  image.src = 'http://www.client.com/demo/cors/images/img.jpg';
-  //image.src = 'http://www.server.com/demo/cors/images/img01.png';
+  // image.src = 'http://www.client.com/demo/cors/images/img.jpg';
+  image.src = 'http://www.server.com/demo/cors/images/img.jpg';
 
   image.onload = function () {
     ctx.drawImage(image, 0, 0);
